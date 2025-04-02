@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+.clock {
+    font-size: 4rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0 10px rgb(35, 45, 45), 0 0 20px rgb(40, 48, 48), 0 0 40px rgb(54, 69, 69);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+.character {
+    font-size: 6rem;
+    position: absolute;
+    bottom: 20px;
+    animation: bounce 2s infinite alternate;
+    filter: drop-shadow(0 0 10px yellow);
+}
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
